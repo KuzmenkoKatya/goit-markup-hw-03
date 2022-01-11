@@ -15,8 +15,22 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;}  
+    
+    p, h1, h2, h3, h4, h5, h6 {margin: 0;}
+    ul {margin: 0; padding: 0;}
+
+    button {cursor: pointer;}
+
   .list {list-style: none;}
   .link {text-decoration: none;}  
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;  
+}
+
   .header-logo {
     font-family: Raleway;
     font-weight: 700;
@@ -42,7 +56,9 @@
     clip: rect(0 0 0 0);}
 /* Навигация */  
   .header {
-    background-color: var(--white-color);}  
+    background-color: var(--white-color);
+    padding-top: 24px;
+    padding-bottom: 25px;}  
   .header-site-nav .link:hover,
   .header-site-nav .link:focus,
   .header-site-auth .link:hover,
@@ -78,6 +94,14 @@
     letter-spacing: 0.06em;
     color: var(--white-color);
     background-color: #188ce8;}
+.container-hero {
+ 
+  height: 600px;
+  padding-top: 200px;
+  padding-left: 452px;
+  padding-right: 452px;
+}
+
       
 /* Преимущества */  
     .advantage-title {

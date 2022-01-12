@@ -82,6 +82,8 @@
     color: var(--title-text-color);}  
 /* Герой */    
 .hero {background-color: #2f303a;
+       
+       padding: 200px 452px 200px 452px;     
    }
 .hero-title {
     font-weight: 900;
@@ -90,14 +92,15 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--white-color);}  
+    color: var(--white-color);}
+        
     .hero-button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--white-color);
-    background-color: #188ce8;
+    background-color: #188ce8;   
     margin-top: 40px;
     }
   .container-hero { 
@@ -106,16 +109,22 @@
   padding-left: 452px;
   padding-right: 452px;
   padding-bottom: 280px;
-   
-}
-
+   }
       
 /* Преимущества */  
+    .section-advantage {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+    
     .advantage-title {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--title-text-color);}
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+     }
+
 /* Чем мы занимаемся */
    .directions-photo {display: block;}  
 /* Наша команда */

@@ -21,6 +21,8 @@
 
     button {cursor: pointer;}
 
+    img {display: block;}
+
   .list {list-style: none;}
   .link {text-decoration: none;}  
 
@@ -59,6 +61,7 @@
     background-color: var(--white-color);
     padding-top: 24px;
     padding-bottom: 25px;}  
+
   .header-site-nav .link:hover,
   .header-site-nav .link:focus,
   .header-site-auth .link:hover,
@@ -78,7 +81,8 @@
     letter-spacing: 0.02em;
     color: var(--title-text-color);}  
 /* Герой */    
-.hero {background-color: #2f303a;}
+.hero {background-color: #2f303a;
+   }
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -93,13 +97,16 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--white-color);
-    background-color: #188ce8;}
-.container-hero {
- 
-  height: 600px;
+    background-color: #188ce8;
+    margin-top: 40px;
+    }
+  .container-hero { 
+  height: 600px;  
   padding-top: 200px;
   padding-left: 452px;
   padding-right: 452px;
+  padding-bottom: 280px;
+   
 }
 
       

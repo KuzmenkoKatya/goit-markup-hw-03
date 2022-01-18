@@ -277,10 +277,7 @@
 
    .list .title-works {
     margin-top: 0px;
-    margin-bottom: 4px;
-    padding-left: 24px;    
-    padding-top: 0px;
-    padding-bottom: 0px; 
+    margin-bottom: 4px;     
     font-weight: 700;
     font-size: 18px;
     line-height: 171%;
@@ -289,46 +286,47 @@
 
   .list .kind-works {
     margin-top: 4px;
-    margin-bottom: 0px;
-    padding-left: 24px;
-    padding-top: 0px;
-    padding-bottom: 0px;    
+    margin-bottom: 0px;    
     font-size: 16px;
     letter-spacing: 3%;
     line-height: 160%;}
 
 /*НАВИГАЦИЯ ГАЛЕРЕИ*/
     
-    
-    .gallery-nav 
-  {display: flex;
-  
+  .gallery-nav 
+  {display: flex;  
   margin-left: -30px;
   justify-content: center;
-  margin-bottom: 50px;  }
-
-  .gallery-nav .list
-   {width: calc(100% / 6 - 30px);   
-   text-align: center;}    
-       
-   .gallery-photo {
-    display: block;
-    margin-bottom: 20px;}
-
-  .section-projects {
-    padding-top: 94px;
-    padding-bottom: 94px;}
-  
-  .gallery>li {margin-left: 30px;
+  margin-bottom: 50px;}
+  .gallery-nav .list{text-align: center;}    
+  .gallery-nav>li:nth-child(n + 2) {margin-left: 8px;}    
+ 
+  .card {outline: #eeeeee 1px solid;}
+.card-content {padding: 20px 24px;}  
+ /* .gallery>li {margin-left: 30px;
                margin-bottom: 30px;               
-              border: #eeeeee 1px solid}  
+               outline: #eeeeee 1px solid;}  */
 
-  .gallery {display: flex;
-           flex-wrap: wrap;
-           justify-content: center;}
-   
-  .gallery .list {width: calc(100% / 4);}
-   .gallery-nav>li:nth-child(n + 2) {margin-left: 8px;}
-  .gallery>li:nth-child(3n + 1) {margin-left: 0;} 
-  .gallery>li:nth-last-child(-n + 3) {margin-bottom: 0;}
-  .title-works {margin-top: 300px; margin-bottom: 100px; }
+ .gallery 
+ {padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);}
+
+.gallery > .list 
+{flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  outline: #eeeeee 1px solid;}
+ 
+.section-projects {
+  padding-top: 94px;
+  padding-bottom: 94px;}
+ 
+  /*.gallery>li:nth-child(3n + 1) {margin-left: 0;} 
+  .gallery>li:nth-last-child(-n + 3) {margin-bottom: 0;}*/
+  

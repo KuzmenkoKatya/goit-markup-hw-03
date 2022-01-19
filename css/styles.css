@@ -54,7 +54,7 @@
     line-height: 1.17;
     text-align: center;
     color: var(--title-text-color);    
-    padding-bottom: 50px;} 
+    margin-bottom: 50px;} 
 
   .advantage-visually-hidden {
     position: absolute;
@@ -88,22 +88,25 @@
     color: var(--title-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
-    flex-shrink:1}
+    flex-shrink:1
+    }
     .header-site-nav .list:nth-child(2) {margin: 0px 50px 0px 50px;}
-    .header-site-nav .list:nth-child(3) {margin-right: 285px;}
-    .header-site-auth .link:nth-child(1) {margin-right: 50px;}
-    .header-site-auth .link:nth-last-child(2) {padding-right: auto; }
+    .header-site-nav .list:nth-child(3) {margin-right: 331px;}
+    .header-site-auth .list:nth-child(2) {margin-left: 50px;}
+    .header-site-auth .link:nth-last-child(2) {/*padding-right: auto;*/
+    padding-right: 0px; }
 
   .header-site-nav .link.header-current {color: var(--accent-color);}  
   .header-site-auth .link {
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    letter-spacing: 2%;
     color: var(--title-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
-    flex-shrink:1}
-    
+    margin-left: auto;
+    }
+    .header-site-auth .li {display: block;}
     .header-container {
                       flex-direction: row;
                       display: flex;
@@ -113,13 +116,16 @@
  .header-container, .content-nav,
  .header-site-nav, .header-site-auth {display: flex;
                                       align-items: center;}
- 
+.header-site-auth {justify-content: flex-end;}
   
    
 
   
 /* Герой */    
-.hero {background-color: #2f303a;}
+.hero 
+{background-color: #2f303a;
+  padding: 200px 0px 200px 0px;
+  text-align: center;}
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -130,14 +136,9 @@
     color: var(--white-color);
     max-width: 55%;
     margin-left: auto;
-    margin-right: auto;}
-      
+    margin-right: auto;}   
 
-  .container-hero {
-   padding: 200px 0px 200px 0px;
-   text-align: center;
-   }
-      
+  
 /* Преимущества */  
     .section-advantage {
       padding-top: 94px;
@@ -150,7 +151,8 @@
     {font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--title-text-color);
+    color: var(--title-text-color);     
+   
     margin-bottom: 10px;}
 
     .advantage-site-nav 
@@ -160,8 +162,7 @@
 
     .advantage-site-nav .list 
     {width: calc(100% / 4 - 30px);
-    margin-left: 30px;
-    text-align: center;}
+    margin-left: 30px;    }
 
 /* Чем мы занимаемся */
    .directions-photo {display: block;}
@@ -172,10 +173,9 @@
     flex-wrap: wrap;
     margin-left: -30px;
     justify-content: center; }
-   .directions-photos .list {width: calc(100% / 4 - 30px);
-    margin-left: 30px;
-    text-align: center;
-    }
+   .directions-photos .list 
+   {margin-left: 30px;
+    text-align: center;}
 
 
 /* Наша команда */
@@ -186,15 +186,18 @@
     line-height: 1.19;
     color: var(--title-text-color);}
 
-    .our-team-employee {margin-top: 30px;
-                        margin-bottom: 10px;}  
+    .our-team-employee {margin-bottom: 10px;
+                        color: var(--title-text-color);}  
 
    .our-team .our-team-position {
     font-size: 16px;
     line-height: 1.19;} 
+    .our {padding-top: 30px;
+          padding-bottom: 30px;}
 
     .section-our-team {padding-top: 94px;
-                       padding-bottom: 94px;}
+                       padding-bottom: 94px;
+                       background-color: #f5f4fa;}
 .master-list {display: flex;
               flex-wrap: wrap;
               margin-left: -30px;}
@@ -217,10 +220,11 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--white-color);}  
+    color: var(--white-color);
+    margin-bottom: 20px;}  
 
     .footer-logo-design {color: var(--accent-color);}
-    .footer-contact .futer-item {margin-top: 20px;}  
+    
     .footer-contact {font-style: normal;
                      margin-top: 20px;}  
     .futer-item .link {color: var(--sacondary-white-color);}
@@ -238,7 +242,8 @@
     background-color: var(--accent-color);   
     margin-top: 30px;
     border-radius: 4px;
-    border: 0;    }
+    border: 0;
+    padding: 10px 32px;  }
     
     .hero-button:hover {background-color:#188ce8;}
 
@@ -301,7 +306,8 @@
   .gallery-nav .list{text-align: center;}    
   .gallery-nav>li:nth-child(n + 2) {margin-left: 8px;}    
  
-  .card {outline: #eeeeee 1px solid;}
+  .card {outline: #eeeeee 1px solid;
+         display: block;}
 .card-content {padding: 20px 24px;}  
  /* .gallery>li {margin-left: 30px;
                margin-bottom: 30px;               
